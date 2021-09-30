@@ -22,7 +22,7 @@ public class Email {
 	private int mailboxCapacity = 500;
 	private int defaultPasswordLength = 10;
 	private String alternateEmail;
-	private String companySuffix;
+	private String companySuffix = "QA.com";
 	
 	
 	
