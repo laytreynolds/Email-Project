@@ -10,7 +10,8 @@ public class Email {
 	private int mailboxCapacity = 500;
 	private int defaultPasswordLength = 10;
 	private String alternateEmail;
-	private String companySuffix = "uber.com";
+	private String companySuffix;
+	
 	public String getFirstName() {
 		return firstName;
 	}
