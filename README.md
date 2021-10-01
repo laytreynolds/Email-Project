@@ -54,7 +54,7 @@ PERSISTED IN WORKBENCH
 
 
 
-Jira Board - "link"
+Jira Board - https://laytreynolds.atlassian.net/jira/software/projects/QJPECA/boards/2/backlog
 
 "Risk assessment pdf"
 
