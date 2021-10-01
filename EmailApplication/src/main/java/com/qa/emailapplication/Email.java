@@ -3,6 +3,7 @@ package com.qa.emailapplication;
 import java.util.Objects;
 import java.util.Scanner;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,9 +20,11 @@ public class Email {
 	private String password;
 	private String department;	
 	private String email;	
+	@Column(columnDefinition = "integer default 500")
 	private int mailboxCapacity = 500;
 	private int defaultPasswordLength = 10;
 	private String alternateEmail;
+	@Column(columnDefinition = "varchar(255) default 'QA.com")
 	private String companySuffix = "QA.com";
 	
 	
