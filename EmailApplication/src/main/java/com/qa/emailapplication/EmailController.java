@@ -18,22 +18,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/Email")
-public class UserController {
+public class EmailController {
 
 	@Autowired
-	private UserService service;
+	private EmailService service;
 	
 
 //create
 	@PostMapping("/create")
-	public ResponseEntity<Email> create(@RequestBody Email user) {
-		return new ResponseEntity<Email>(this.service.create(user), HttpStatus.CREATED);
+	public ResponseEntity<Email> create(@RequestBody Email e) {
+		return new ResponseEntity<Email>(this.service.create(e), HttpStatus.CREATED);
 	}
 	
 ////create via DTO
 //	@PostMapping("/createDTO")
-//	public ResponseEntity<EmailDTO> createByDTO(@RequestBody EmailDTO user) {
-//		return new ResponseEntity<EmailDTO>(this.service.createByDTO(user), HttpStatus.CREATED);
+//	public ResponseEntity<EmailDTO> createByDTO(@RequestBody EmailDTO Email) {
+//		return new ResponseEntity<EmailDTO>(this.service.createByDTO(Email), HttpStatus.CREATED);
 //	}
 
 ////ReadAllByDTO
@@ -66,8 +66,8 @@ public class UserController {
 	
 //Update
 	@PutMapping("/update/{id}")
-	public ResponseEntity<Email> update(@PathVariable long id, @RequestBody Email user) {
-		return new ResponseEntity<Email>(this.service.update(user, id), HttpStatus.ACCEPTED);
+	public ResponseEntity<Email> update(@PathVariable long id, @RequestBody Email e) {
+		return new ResponseEntity<Email>(this.service.update(id, e), HttpStatus.ACCEPTED);
 
 	}
 
