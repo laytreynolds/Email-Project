@@ -17,7 +17,7 @@ This is an accumulation of all the knowledge we have learnt on the course so far
 I knew the challenge was going to be tough. The topics covered regarding HTTP requests are complex and need to be done correct to work.
 
 
-**What went well? **
+**What went well?**
 the task as a whole went better than I thought. I managed to get a working CRUD application done within the first 48 hours which was a relief. The Rest of my time was focused on test coverage and Additional features.
 
 
