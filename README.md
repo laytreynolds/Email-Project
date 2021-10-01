@@ -22,6 +22,7 @@ Possible improvements for future revisions of the project?
 
 
 "Postman Screenshots"
+
 <!-- Create --> CREATE
 <img width="1440" alt="Screenshot 2021-10-01 at 16 03 42 (2)" src="https://user-images.githubusercontent.com/79116038/135645893-1e8f7ea1-df51-4e6a-834f-89a5b5469ee1.png">
 
@@ -40,6 +41,7 @@ Possible improvements for future revisions of the project?
 
 
 "Database Screenshots"
+
 CREATE IN POSTMAN
 <img width="1440" alt="Screenshot 2021-10-01 at 16 29 13 (2)" src="https://user-images.githubusercontent.com/79116038/135647602-969d9758-4018-4a28-8efe-27a9bd1d30ee.png">
 
