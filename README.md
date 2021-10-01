@@ -11,16 +11,22 @@ The end goal is build a seperate, interactive command line in which the user int
 
 Why Are We Doing This?
 
-This is an accumulation of all the knowledge we have learnt on the course so far and how we apply this knowledge in practical situations. 
+This is an accumulation of all the knowledge we have learnt on the course so far and how we apply this knowledge in practical situations.
+
 
 How I Expected the Challenge To Go?
+
+I knew the challenge was going to be tough. The topics covered regarding HTTP requests are complex and need to be done correct to work.
 
 
 What went well? 
 
+the task as a whole went better than I thought. I managed to get a working CRUD application done within the first 48 hours which was a relief. The Rest of my time was focused on test coverage and Additional features.
+
 
 What didn't go as planned?
 
+Connecting to a database was a tough start to the project as I have been having issues all week. This is a case of merely debugging and testing different fixes in order to get the connection. In the end, it worked by creating the database first, then connecting through the Spring API.
 
 Possible improvements for future revisions of the project?
 
