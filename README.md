@@ -40,8 +40,17 @@ Possible improvements for future revisions of the project?
 
 
 "Database Screenshots"
+CREATE IN POSTMAN
+<img width="1440" alt="Screenshot 2021-10-01 at 16 29 13 (2)" src="https://user-images.githubusercontent.com/79116038/135647602-969d9758-4018-4a28-8efe-27a9bd1d30ee.png">
+
+PERSISTED IN WORKBENCH
+<img width="1440" alt="Screenshot 2021-10-01 at 16 30 21 (2)" src="https://user-images.githubusercontent.com/79116038/135647640-f7cb4cc5-77e3-4417-a124-d2d6ae0103ed.png">
 
 "Test results Screenshot"
+
+
+
+
 
 Jira Board - "link"
 
