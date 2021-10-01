@@ -15,7 +15,6 @@ public class EmailService {
 //	private ModelMapper mapper;
 	private EmailRepo repo;
 
-	
 //	@Autowired
 //	public EmailService(EmailRepo repo, ModelMapper mapper) {
 //		this.repo = repo;
@@ -32,6 +31,14 @@ public class EmailService {
 //		return this.mapper.map(a, Email.class);
 //	}
 
+//	
+////createbyDTO 
+//	public EmailDTO createByDTO(EmailDTO a) {
+//		Email saveIt = this.mapFromDTO(a);
+//		Email saved = this.repo.save(saveIt);
+//		return this.mapToDTO(saved);
+//	}
+
 //	Email Service constructor
 	public EmailService(EmailRepo repo) {
 		super();
@@ -42,29 +49,13 @@ public class EmailService {
 	public Email create(Email a) {
 		return this.repo.save(a);
 	}
-	
-//	
-////createbyDTO 
-//	public EmailDTO createByDTO(EmailDTO a) {
-//		Email saveIt = this.mapFromDTO(a);
-//		Email saved = this.repo.save(saveIt);
-//		return this.mapToDTO(saved);
-//	}
 
-//ReadAll
+//Read All
 	public List<Email> readAll() {
 		return this.repo.findAll();
 	}
-	
-	
-////	readAllByDTO
-//	public List<EmailDTO> readAllbyDTO() {
-//		return this.Email;
-//		
-//	}
-	
 
-//Read by id
+//Read By Id
 
 	public Email read(long id) {
 		return this.repo.findById(id).get();
@@ -72,17 +63,14 @@ public class EmailService {
 
 //update
 	public Email update(Long id, Email newEmail) {
-		Email existing = this.repo.findById(id).orElseThrow(EmailNotFoundException :: new);
-        existing.setFirstName(newEmail.getFirstName());
-        existing.setFirstName(newEmail.getFirstName());
-        existing.setPassword(newEmail.getPassword());
-        existing.setDepartment(newEmail.getDepartment());
-        existing.setEmail(newEmail.getEmail());
-        
-
-        return this.repo.save(existing);
-    }
-
+		Email existing = this.repo.findById(id).orElseThrow(EmailNotFoundException::new);
+		existing.setFirstName(newEmail.getFirstName());
+		existing.setFirstName(newEmail.getFirstName());
+		existing.setPassword(newEmail.getPassword());
+		existing.setDepartment(newEmail.getDepartment());
+		existing.setEmail(newEmail.getEmail());
+		return this.repo.save(existing);
+	}
 
 //delete
 	public boolean delete(long id) {
@@ -94,3 +82,9 @@ public class EmailService {
 	}
 
 }
+
+////	readAllByDTO
+//	public List<EmailDTO> readAllbyDTO() {
+//		return this.Email;
+//		
+//	}
