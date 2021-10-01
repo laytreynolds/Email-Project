@@ -1,5 +1,6 @@
 package com.qa.emailapplication;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 import javax.persistence.Entity;
@@ -8,7 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-
 public class Email {
 	
 	@Id
@@ -27,6 +27,12 @@ public class Email {
 	
 	
 //	constructor to first and last name
+	
+	public Email() {
+		super();
+	}
+	
+	
 	public Email(String firstName, String lastName) {
 		
 		this.firstName = firstName;
@@ -71,7 +77,7 @@ public class Email {
 		
 	}
 	
-	
+
 //	ask for department
 	
 	private String setDepartment() {
@@ -93,10 +99,21 @@ public class Email {
 	
 	
 	
+
+
 	public String showInfo() {
 		return ("Name: " + firstName + " " + lastName + "\n" +
 			   "Email: " + email + "\n" +
 			   "Mailbox Capacity: " + mailboxCapacity);
+	}
+	
+	public long getId() {
+		return id;
+	}
+	
+	
+	public void setId(long id) {
+		this.id = id;
 	}
 	
 	
@@ -110,7 +127,6 @@ public class Email {
 	public void alternateEmail(String altEmail){
 		this.alternateEmail = altEmail;	
 	}
-	
 	
 //	 change password
 	public void changePassword(String password) {
@@ -171,6 +187,43 @@ public class Email {
 	public void setCompanySuffix(String companySuffix) {
 		this.companySuffix = companySuffix;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Email [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", password=" + password
+				+ ", department=" + department + ", email=" + email + ", mailboxCapacity=" + mailboxCapacity
+				+ ", defaultPasswordLength=" + defaultPasswordLength + ", alternateEmail=" + alternateEmail
+				+ ", companySuffix=" + companySuffix + "]";
+	}
+
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(alternateEmail, companySuffix, defaultPasswordLength, department, email, firstName, id,
+				lastName, mailboxCapacity, password);
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Email other = (Email) obj;
+		return Objects.equals(alternateEmail, other.alternateEmail)
+				&& Objects.equals(companySuffix, other.companySuffix)
+				&& defaultPasswordLength == other.defaultPasswordLength && Objects.equals(department, other.department)
+				&& Objects.equals(email, other.email) && Objects.equals(firstName, other.firstName) && id == other.id
+				&& Objects.equals(lastName, other.lastName) && mailboxCapacity == other.mailboxCapacity
+				&& Objects.equals(password, other.password);
+	}
+	
+	
+	
 	
 	
 	
