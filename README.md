@@ -41,8 +41,10 @@ Connecting to a database was a tough start to the project as I have been having 
 
 
 <!-- Delete --> DELETE
-<img width="1440" alt="Screenshot 2021-10-01 at 16 06 59 (2)" src="https://user-images.githubusercontent.com/79116038/135646186-cc193976-d526-42f9-94ad-95f92862fcb8.png">
-<img width="1440" alt="Screenshot 2021-10-01 at 16 06 48 (2)" src="https://user-images.githubusercontent.com/79116038/135646178-47c03413-efda-4fa0-b075-6b2625bb5519.png">
+<img width="1095" alt="Screenshot 2021-10-02 at 12 38 58" src="https://user-images.githubusercontent.com/79116038/135714467-64faeaa6-4102-41de-a7e4-fac3f264f891.png">
+<img width="1100" alt="Screenshot 2021-10-02 at 12 39 25" src="https://user-images.githubusercontent.com/79116038/135714474-dc034cbb-748a-4492-a963-4aabf454934d.png">
+<img width="1100" alt="Screenshot 2021-10-02 at 12 39 37" src="https://user-images.githubusercontent.com/79116038/135714481-cb9b77de-8b94-4814-a9a0-77b2d9bcdb74.png">
+ 
 
 
 
