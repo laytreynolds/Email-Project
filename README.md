@@ -35,12 +35,14 @@ Connecting to a database was a tough start to the project as I have been having 
 <img width="1440" alt="Screenshot 2021-10-01 at 16 05 05 (2)" src="https://user-images.githubusercontent.com/79116038/135646030-74177dba-fdf1-45f3-a79d-6ce1fce739e9.png">
 
 <!-- Update --> UPDATE
-<img width="1440" alt="Screenshot 2021-10-01 at 16 06 08 (2)" src="https://user-images.githubusercontent.com/79116038/135646069-3fdee1b3-2ed2-4886-bb39-c38a63784f05.png">
-<img width="1440" alt="Screenshot 2021-10-01 at 16 06 32 (2)" src="https://user-images.githubusercontent.com/79116038/135646148-ec558ebf-df01-4f78-b865-affacee2e831.png">
+<img width="1097" alt="Screenshot 2021-10-02 at 12 18 28" src="https://user-images.githubusercontent.com/79116038/135713857-6b19492f-d872-482c-b8eb-ff39150032bc.png">
+<img width="1101" alt="Screenshot 2021-10-02 at 12 18 14" src="https://user-images.githubusercontent.com/79116038/135713859-70d8a467-4281-4731-b4eb-16303d6338d2.png">
+
 
 <!-- Delete --> DELETE
-<img width="1440" alt="Screenshot 2021-10-01 at 16 06 48 (2)" src="https://user-images.githubusercontent.com/79116038/135646178-47c03413-efda-4fa0-b075-6b2625bb5519.png">
 <img width="1440" alt="Screenshot 2021-10-01 at 16 06 59 (2)" src="https://user-images.githubusercontent.com/79116038/135646186-cc193976-d526-42f9-94ad-95f92862fcb8.png">
+<img width="1440" alt="Screenshot 2021-10-01 at 16 06 48 (2)" src="https://user-images.githubusercontent.com/79116038/135646178-47c03413-efda-4fa0-b075-6b2625bb5519.png">
+
 
 
 
