@@ -35,8 +35,9 @@ Connecting to a database was a tough start to the project as I have been having 
 <img width="1440" alt="Screenshot 2021-10-01 at 16 05 05 (2)" src="https://user-images.githubusercontent.com/79116038/135646030-74177dba-fdf1-45f3-a79d-6ce1fce739e9.png">
 
 <!-- Update --> UPDATE
-<img width="1097" alt="Screenshot 2021-10-02 at 12 18 28" src="https://user-images.githubusercontent.com/79116038/135713857-6b19492f-d872-482c-b8eb-ff39150032bc.png">
-<img width="1101" alt="Screenshot 2021-10-02 at 12 18 14" src="https://user-images.githubusercontent.com/79116038/135713859-70d8a467-4281-4731-b4eb-16303d6338d2.png">
+<img width="1101" alt="Screenshot 2021-10-02 at 12 18 14" src="https://user-images.githubusercontent.com/79116038/135713936-5adc5889-acb0-4731-a6ab-9acb8ca97b91.png">
+<img width="1097" alt="Screenshot 2021-10-02 at 12 18 28" src="https://user-images.githubusercontent.com/79116038/135713939-43fc3576-8af7-4a94-96d0-4481146615cf.png">
+
 
 
 <!-- Delete --> DELETE
