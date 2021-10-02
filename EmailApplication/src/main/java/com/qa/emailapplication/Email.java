@@ -21,7 +21,20 @@ public class Email {
 	private int defaultPasswordLength = 10;
 	private String companySuffix = "QA.com";
 
-	public long getId() {
+	public Email(long id, String firstName, String lastName, String password, String department, String email) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.password = password;
+		this.department = department;
+		this.email = email;
+	}
+
+	public Email() {
+	}
+
+public long getId() {
 		return id;
 	}
 
@@ -29,7 +42,7 @@ public class Email {
 		this.id = id;
 	}
 
-//	 change password
+	//	 change password
 	public void changePassword(String password) {
 		this.password = password;
 	}
