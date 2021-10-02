@@ -65,7 +65,7 @@ public class EmailService {
 	public Email update(Long id, Email newEmail) {
 		Email existing = this.repo.findById(id).orElseThrow(EmailNotFoundException::new);
 		existing.setFirstName(newEmail.getFirstName());
-		existing.setFirstName(newEmail.getFirstName());
+		existing.setLastName(newEmail.getLastName());
 		existing.setPassword(newEmail.getPassword());
 		existing.setDepartment(newEmail.getDepartment());
 		existing.setEmail(newEmail.getEmail());
