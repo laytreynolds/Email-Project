@@ -72,19 +72,41 @@ public class EmailServiceTest {
 	 }
 	 
 	 
-//	 @Test
-//	    void testDelete() {
-//
-//
-//	        Long id = 1L;
-//
-//	        Mockito.when(this.repo.deleteById(id)).thenReturn(!this.repo.existsById(id));
-//
-//	        Assertions.assertThat(this.service.delete(id)).isTrue();
-//
-//	        Mockito.verify(this.repo, Mockito.times(1)).existsById(id);
-//
-//	    }
+	 @Test
+	    void testUpdate() {
+
+	        Long id = 1L;
+	        Email newValues = new Email(0,  "Mike", "Michaels", "1123456789", "Accounting", "mike.michaels");
+	        Email existing = new Email(id,  "Layt", "Reynolds", "0123456789", "Sales", "layton.reynolds");
+	        Email updated = new Email(id, newValues.getFirstName(), newValues.getLastName(), newValues.getPassword(), newValues.getDepartment(), newValues.getEmail());
+
+
+	        Mockito.when(this.repo.findById(id)).thenReturn(Optional.of(existing));
+	        
+	        Mockito.when(this.repo.save(updated)).thenReturn(updated);
+
+	        Assertions.assertThat(this.service.update(id, newValues)).isEqualTo(updated);
+
+	        Mockito.verify(this.repo, Mockito.times(1)).findById(id);
+	        Mockito.verify(this.repo, Mockito.times(1)).save(updated);
+
+	    }
+	 
+	 
+	 
+	 @Test
+	    void testDelete() {
+
+
+	        Long id = 1L;
+
+	        Mockito.when(this.repo.existsById(id)).thenReturn(!this.repo.existsById(id));
+
+	        Assertions.assertThat(this.service.delete(id)).isTrue();
+
+	        Mockito.verify(this.repo, Mockito.times(1)).existsById(id);
+
+	    }
 	 
 	 
 	
