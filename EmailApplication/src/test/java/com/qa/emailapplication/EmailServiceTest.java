@@ -1,11 +1,17 @@
 package com.qa.emailapplication;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.List;
 import java.util.Optional;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -13,10 +19,10 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 @SpringBootTest
 public class EmailServiceTest {
 	
-	@Autowired
+	@InjectMocks
 	private EmailService service;
 	
-	@MockBean
+	@Mock
 	private EmailRepo repo;
 	
 	@Test
@@ -27,7 +33,7 @@ public class EmailServiceTest {
 		
 	     Mockito.when(this.repo.save(toCreate)).thenReturn(created);
 	     
-         Assertions.assertThat(this.service.create(toCreate)).isEqualTo(created);
+         assertEquals(created, this.service.create(toCreate));
          
          Mockito.verify(this.repo, Mockito.times(1)).save(toCreate);
 
