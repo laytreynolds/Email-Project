@@ -1,5 +1,3 @@
-
-   
 package com.qa.emailapplication;
 
 import java.util.List;
@@ -22,15 +20,13 @@ public class EmailController {
 
 	@Autowired
 	private EmailService service;
-	
 
 //create
 	@PostMapping("/create")
 	public ResponseEntity<Email> create(@RequestBody Email e) {
 		return new ResponseEntity<Email>(this.service.create(e), HttpStatus.CREATED);
 	}
-	
-	
+
 //Read
 	@GetMapping("/read")
 	public ResponseEntity<List<Email>> readAll() {
@@ -44,7 +40,7 @@ public class EmailController {
 		return new ResponseEntity<Email>(this.service.read(id), HttpStatus.OK);
 
 	}
-	
+
 //Update
 	@PutMapping("/update/{id}")
 	public ResponseEntity<Email> update(@PathVariable long id, @RequestBody Email e) {
