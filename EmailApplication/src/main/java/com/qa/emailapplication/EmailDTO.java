@@ -6,12 +6,14 @@
 //	public String firstName;
 //	public String lastName;
 //	public String email;
+//	public String department;
 //
 //	public EmailDTO(Email e) {
 //		this.id = e.getId();
 //		this.firstName = e.getFirstName();
 //		this.lastName = e.getLastName();
 //		this.email = e.getEmail();
+//		this.department = e.getDepartment();
 //	}
 //
 //	public long getId() {
@@ -38,12 +40,20 @@
 //		this.lastName = lastName;
 //	}
 //
-//	public String getJumpheight() {
+//	public String getEmail() {
 //		return email;
 //	}
 //
-//	public void setJumpheight(String email) {
+//	public void setEmail(String email) {
 //		this.email = email;
+//	}
+//
+//	public String getDepartment() {
+//		return department;
+//	}
+//
+//	public void setDepartment(String department) {
+//		this.department = department;
 //	}
 //
 //}
