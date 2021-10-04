@@ -99,19 +99,15 @@ public class EmailControllerTests {
 				.andExpect(status().isAccepted()).andExpect(content().json(updatedAsJSON));
 	}
 
-//	@Test
-//	public void deleteTest() throws Exception {
-//
-//		Long id = 1L;
-//
-//		Email delValues = new Email(id, "Mike", "Michaels", "1123456789", "Accounting", "mike.michaels");
-//
-//		String delJSON = this.mapper.writeValueAsString(delValues);
-//
-//		Mockito.when(this.service.delete(id)).thenReturn(false);
-//
-//		mvc.perform(delete("/user/delete/{id}", id);
-//
-//	}
+	@Test
+	public void deleteTest() throws Exception {
+
+		Long id = 1L;
+
+		Mockito.when(this.service.delete(id)).thenReturn(true);
+		
+//		mvc.perform(delete("/user/delete/{id}", id).(null)
+
+	}
 
 }

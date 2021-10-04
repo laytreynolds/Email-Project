@@ -63,6 +63,7 @@ public class EmailService {
 
 //update
 	public Email update(Long id, Email newEmail) {
+
 		Email existing = this.repo.findById(id).orElseThrow();
 
 		existing.setFirstName(newEmail.getFirstName());
