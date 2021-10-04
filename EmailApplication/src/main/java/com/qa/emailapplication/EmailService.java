@@ -64,7 +64,7 @@ public class EmailService {
 //update
 	public Email update(Long id, Email newEmail) {
 		Email existing = this.repo.findById(id).orElseThrow();
-		
+
 		existing.setFirstName(newEmail.getFirstName());
 		existing.setLastName(newEmail.getLastName());
 		existing.setPassword(newEmail.getPassword());
@@ -76,8 +76,8 @@ public class EmailService {
 //delete
 	public boolean delete(long id) {
 		this.repo.deleteById(id);
-        return !this.repo.existsById(id);
-		
+		return !this.repo.existsById(id);
+
 	}
 
 }
