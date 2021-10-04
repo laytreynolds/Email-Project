@@ -74,11 +74,9 @@ public class EmailService {
 
 //delete
 	public boolean delete(long id) {
-		if (!this.repo.existsById(id)) {
-			throw new EmailNotFoundException();
-		}
 		this.repo.deleteById(id);
-		return !this.repo.existsById(id);
+        return !this.repo.existsById(id);
+		
 	}
 
 }
