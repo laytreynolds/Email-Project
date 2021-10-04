@@ -25,6 +25,7 @@ the task as a whole went better than I thought. I managed to get a working CRUD 
 Connecting to a database was a tough start to the project as I have been having issues all week. This is a case of merely debugging and testing different fixes in order to get the connection. In the end, it worked by creating the database first, then connecting through the Spring API.
 
 **Possible improvements for future revisions of the project?**
+Overall I am very happy with my end results. The project went how I expected and felt like I followed and applied the specification well. If I were to do the project again, I would have possibly looked into adding multiple entities within one table and linking them through their keys. I have a application table with the "Email" entity, as the goal of this table was to provider users with email address and passwords. I would like to have another table for say "Tickets" where this would link a user to a submitted ticket through the id's. 
 
 **Postman Screenshots**
 
