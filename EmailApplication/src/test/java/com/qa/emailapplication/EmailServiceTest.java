@@ -70,7 +70,9 @@ public class EmailServiceTest {
 
 		Long id = 1L;
 		Email newValues = new Email(0, "Mike", "Michaels", "1123456789", "Accounting", "mike.michaels");
+
 		Email existing = new Email(id, "Layt", "Reynolds", "0123456789", "Sales", "layton.reynolds");
+
 		Email updated = new Email(id, newValues.getFirstName(), newValues.getLastName(), newValues.getPassword(),
 				newValues.getDepartment(), newValues.getEmail());
 
