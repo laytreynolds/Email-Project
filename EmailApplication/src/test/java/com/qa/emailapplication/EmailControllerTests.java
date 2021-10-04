@@ -2,6 +2,7 @@ package com.qa.emailapplication;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -37,6 +38,7 @@ public class EmailControllerTests {
 	@Test
 	public void createTest() throws Exception {
 		Email entry = new Email(0, "Layt", "Reynolds", "0123456789", "Sales", "layton.reynolds");
+		
 		String entryAsJSON = this.mapper.writeValueAsString(entry);
 		
 		Mockito.when(this.service.create(entry)).thenReturn(entry);
@@ -48,30 +50,48 @@ public class EmailControllerTests {
 		
 		
 		}
+	
+	@Test
+	public void readTest() throws Exception {
+		
+		Long id = 1L;
+		
+		Email testEmail = new Email(id, "Layt", "Reynolds", "0123456789", "Sales", "layton.reynolds");
+		
+		List<Email> email = List.of(testEmail);
+		
+		String emailJSON = this.mapper.writeValueAsString(email);
+
+		Mockito.when(this.service.readAll()).thenReturn(email);
+		
+		mvc.perform(get("/user/read")
+				.contentType(MediaType.APPLICATION_JSON)
+				.content(emailJSON)).andExpect(status().isOk())
+				.andExpect(content().json(emailJSON));
+	}
+	
 //	@Test
-//	public void readTest() throws Exception {
+//	public void updateTest() throws Exception {
 //		
-//		Long id = 1L;
+//		Long id = 2L;	
 //		
-//		Email testEmail = new Email(id, "Layt", "Reynolds", "0123456789", "Sales", "layton.reynolds");
+//		Email existing = new Email(id, "Layt", "Reynolds", "0123456789", "Sales", "layton.reynolds");
 //		
-//		testEmail.setId(id);
+//		Email newValues = new Email(id, "Mike", "Michaels", "1123456789", "Accounting", "mike.michaels");
 //		
-//		List<Email> email = List.of(testEmail);
-//
-//		Mockito.when(this.service.readAll()).thenReturn(email);
+//		Email updated = new Email(id, newValues.getFirstName(), newValues.getLastName(), newValues.getPassword(),
+//				newValues.getDepartment(), newValues.getEmail());
 //		
-//		mvc.perform(get("/user/read")
+//		String updatedAsJSON = this.mapper.writeValueAsString(newValues);
+//		
+//		Mockito.when(this.service.update(id, newValues)).thenReturn(updated);
+//		
+//		
+//		mvc.perform(put("/user/update/{id}")
 //				.contentType(MediaType.APPLICATION_JSON)
-//				.content(testEmail)).andExpect(status().isOk())
-//				.andExpect(content().json(entryAsJSON));
-//		
-//		
+//				.content(updatedAsJSON)).andExpect(status().isAccepted())
+//				.andExpect(content().json(updatedAsJSON));
 //	}
-	
-	
-	
-	
 	
 
 }
