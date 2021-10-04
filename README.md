@@ -55,16 +55,16 @@ Overall I am very happy with my end results. The project went how I expected and
 CREATE IN POSTMAN
 <img width="1440" alt="Screenshot 2021-10-01 at 16 29 13 (2)" src="https://user-images.githubusercontent.com/79116038/135647602-969d9758-4018-4a28-8efe-27a9bd1d30ee.png">
 
-PERSISTED IN WORKBENCH
+**PERSISTED IN WORKBENCH**
 <img width="1440" alt="Screenshot 2021-10-01 at 16 30 21 (2)" src="https://user-images.githubusercontent.com/79116038/135647640-f7cb4cc5-77e3-4417-a124-d2d6ae0103ed.png">
 
 **Test results Screenshots**
 <img width="1397" alt="Screenshot 2021-10-04 at 22 27 36" src="https://user-images.githubusercontent.com/79116038/135927288-b77b6b64-075b-4a67-a869-e40e7feb55b0.png">
 
 
-Jira Board - https://laytreynolds.atlassian.net/jira/software/projects/QJPECA/boards/2
+**Jira Board** - https://laytreynolds.atlassian.net/jira/software/projects/QJPECA/boards/2
 
-"Risk assessment pdf" 
+**Risk Assessment**
 
 [Risk Assessment.pdf](https://github.com/laytreynolds/Email-Project/files/7269789/Risk.Assessment.pdf)
 
