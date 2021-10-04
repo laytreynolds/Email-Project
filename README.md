@@ -64,8 +64,6 @@ CREATE IN POSTMAN
 
 **Jira Board** - https://laytreynolds.atlassian.net/jira/software/projects/QJPECA/boards/2
 
-**Risk Assessment**
-
-[Risk Assessment.pdf](https://github.com/laytreynolds/Email-Project/files/7269789/Risk.Assessment.pdf)
+**Risk Assessment** - [Risk Assessment.pdf](https://github.com/laytreynolds/Email-Project/files/7269789/Risk.Assessment.pdf)
 
 
