@@ -6,9 +6,11 @@ import static org.junit.Assert.assertEquals;
 import java.util.List;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
@@ -93,7 +95,6 @@ public class EmailServiceTest {
 		assertThat(this.service.delete(id)).isTrue();
 
 		Mockito.verify(this.repo, Mockito.times(1)).existsById(id);
-
 	}
 
 }

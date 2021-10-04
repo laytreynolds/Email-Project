@@ -42,11 +42,6 @@ public long getId() {
 		this.id = id;
 	}
 
-	//	 change password
-	public void changePassword(String password) {
-		this.password = password;
-	}
-
 	public String getFirstName() {
 		return firstName;
 	}
