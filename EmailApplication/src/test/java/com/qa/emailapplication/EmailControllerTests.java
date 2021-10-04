@@ -69,29 +69,49 @@ public class EmailControllerTests {
 				.content(emailJSON)).andExpect(status().isOk())
 				.andExpect(content().json(emailJSON));
 	}
+
 	
-//	@Test
-//	public void updateTest() throws Exception {
-//		
-//		Long id = 2L;	
-//		
-//		Email existing = new Email(id, "Layt", "Reynolds", "0123456789", "Sales", "layton.reynolds");
-//		
-//		Email newValues = new Email(id, "Mike", "Michaels", "1123456789", "Accounting", "mike.michaels");
-//		
-//		Email updated = new Email(id, newValues.getFirstName(), newValues.getLastName(), newValues.getPassword(),
-//				newValues.getDepartment(), newValues.getEmail());
-//		
-//		String updatedAsJSON = this.mapper.writeValueAsString(newValues);
-//		
-//		Mockito.when(this.service.update(id, newValues)).thenReturn(updated);
-//		
-//		
-//		mvc.perform(put("/user/update/{id}")
-//				.contentType(MediaType.APPLICATION_JSON)
-//				.content(updatedAsJSON)).andExpect(status().isAccepted())
-//				.andExpect(content().json(updatedAsJSON));
-//	}
+	@Test
+	public void readIdTest() throws Exception {
+		
+		Long id = 1L;
+		
+		
+		Email testEmail = new Email(id, "Layt", "Reynolds", "0123456789", "Sales", "layton.reynolds");
+		
+		testEmail.setId(id);
+		
+		String emailJSON = this.mapper.writeValueAsString(testEmail);
+		
+		Mockito.when(this.service.read(id)).thenReturn(testEmail);
+		
+		mvc.perform(get("/user/read/{id}", 1L)
+				.contentType(MediaType.APPLICATION_JSON)
+				.content(emailJSON)).andExpect(status().isOk())
+				.andExpect(content().json(emailJSON));
+	}
+	
+	
+	@Test
+	public void updateTest() throws Exception {
+		
+		Long id = 2L;	
+		
+		Email newValues = new Email(id, "Mike", "Michaels", "1123456789", "Accounting", "mike.michaels");
+		
+		Email updated = new Email(id, newValues.getFirstName(), newValues.getLastName(), newValues.getPassword(),
+				newValues.getDepartment(), newValues.getEmail());
+		
+		String updatedAsJSON = this.mapper.writeValueAsString(newValues);
+		
+		Mockito.when(this.service.update(id, newValues)).thenReturn(updated);
+		
+		
+		mvc.perform(put("/user/update/{id}", 1L)
+				.contentType(MediaType.APPLICATION_JSON)
+				.content(updatedAsJSON)).andExpect(status().isAccepted())
+				.andExpect(content().json(updatedAsJSON));
+	}
 	
 
 }
