@@ -80,4 +80,10 @@ public class EmailService {
 		Email saved = this.repo.save(e);
 		return this.mapToDTO(saved);
 	}
+	
+	//Read by department
+		public List<Email> readByDep(String d) {
+			return this.repo.findAllByDepartmentSQL(d); 
+		}
+	
 }
