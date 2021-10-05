@@ -72,6 +72,5 @@ public class EmailController {
 			return new ResponseEntity<List<Email>>(this.service.readByDep(d), HttpStatus.OK);
 
 		}
-	
 
 }

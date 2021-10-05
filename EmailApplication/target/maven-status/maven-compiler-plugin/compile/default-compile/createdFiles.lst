@@ -1,0 +1,7 @@
+com/qa/emailapplication/EmailDTO.class
+com/qa/emailapplication/EmailApplication.class
+com/qa/emailapplication/EmailService.class
+com/qa/emailapplication/EmailController.class
+com/qa/emailapplication/Email.class
+com/qa/emailapplication/AppConfig.class
+com/qa/emailapplication/EmailRepo.class
