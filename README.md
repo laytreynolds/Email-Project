@@ -17,18 +17,18 @@ The end goal is build a seperate, interactive command line in which the user int
 This is an accumulation of all the knowledge we have learnt on the course so far and how we apply this knowledge in practical situations.
 
 
-### How I Expected It To Go 
+### How I Expected It To Go 
 I knew the challenge was going to be tough. The topics covered regarding HTTP requests are complex and need to be done correct to work.
 
 
-## What Went Well
+### What Went Well
 the task as a whole went better than I thought. I managed to get a working CRUD application done within the first 48 hours which was a relief. The Rest of my time was focused on test coverage and Additional features.
 
 
 ### What Didn't Go To Plan
 Connecting to a database was a tough start to the project as I have been having issues all week. This is a case of merely debugging and testing different fixes in order to get the connection. In the end, it worked by creating the database first, then connecting through the Spring API.
 
-### Possible Improvements
+###Possible Improvements
 Overall I am very happy with my end results. The project went how I expected and felt like I followed and applied the specification well. If I were to do the project again, I would have possibly looked into adding multiple entities within one database and linking them through their keys. I have a application table with the "Email" entity, as the goal of this table was to provider users with email address and passwords. I would like to have another table for say "Tickets" where this would link a user to a submitted ticket through the id's. 
 
 #### Postman
