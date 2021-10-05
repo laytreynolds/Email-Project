@@ -21,6 +21,9 @@ public class EmailServiceTest {
 
 	@Mock
 	private EmailRepo repo;
+	
+	@Mock
+	private EmailDTO dto;
 
 	@Test
 	void createTest() {

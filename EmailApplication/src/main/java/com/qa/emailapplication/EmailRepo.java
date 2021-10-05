@@ -8,5 +8,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EmailRepo extends JpaRepository<Email, Long> {
+	
+	  @Query(value = "SELECT * from Email WHERE department = ?1", nativeQuery = true)
+	    List<Email> findAllByDepartmentSQL(String department); // department is parameter 1
 
 }
