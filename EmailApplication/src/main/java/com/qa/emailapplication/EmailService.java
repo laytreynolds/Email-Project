@@ -3,41 +3,32 @@ package com.qa.emailapplication;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
-//import org.modelmapper.ModelMapper;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class EmailService {
 
-//	private List<EmailDTO> Email = new ArrayList<>();
-//	private ModelMapper mapper;
+	private List<EmailDTO> Email = new ArrayList<>();
+	private ModelMapper mapper;
 	private EmailRepo repo;
 
-//	@Autowired
-//	public EmailService(EmailRepo repo, ModelMapper mapper) {
-//		this.repo = repo;
-//		this.mapper = mapper;
-//	}
+	@Autowired
+	public EmailService(EmailRepo repo, ModelMapper mapper) {
+		super();
+		this.repo = repo;
+		this.mapper = mapper;
+	}
 
-////	Map DTO to Input
-//	public EmailDTO mapToDTO(Email a) {
-//		return this.mapper.map(a, EmailDTO.class);
-//
-//	}
-//	
-//	public Email mapFromDTO(EmailDTO a) {
-//		return this.mapper.map(a, Email.class);
-//	}
+//	Map DTO to Input
+	public EmailDTO mapToDTO(Email a) {
+		return this.mapper.map(a, EmailDTO.class);
 
-//	
-////createbyDTO 
-//	public EmailDTO createByDTO(EmailDTO a) {
-//		Email saveIt = this.mapFromDTO(a);
-//		Email saved = this.repo.save(saveIt);
-//		return this.mapToDTO(saved);
-//	}
+	}
+
 
 //	Email Service constructor
 	public EmailService(EmailRepo repo) {
@@ -81,10 +72,12 @@ public class EmailService {
 
 	}
 
-}
+	public List<EmailDTO> readAllDTO() {
+		return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
+	}
 
-////	readAllByDTO
-//	public List<EmailDTO> readAllbyDTO() {
-//		return this.Email;
-//		
-//	}
+	public EmailDTO createDTO(Email e) {
+		Email saved = this.repo.save(e);
+		return this.mapToDTO(saved);
+	}
+}
