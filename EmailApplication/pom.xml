@@ -9,10 +9,10 @@
 		<version>2.5.5</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>Webthing2</artifactId>
+	<groupId>com.qa.emailapplication</groupId>
+	<artifactId>EmailApplication</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Webthing2</name>
+	<name>EmailApplication</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -54,6 +54,11 @@
 			<artifactId>modelmapper</artifactId>
 			<version>2.3.8</version>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -61,6 +66,10 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId> org.apache.maven.plugins </groupId>
+				<artifactId> maven-surefire-plugin </artifactId>
+				</plugin>
 		</plugins>
 	</build>
 </project>
