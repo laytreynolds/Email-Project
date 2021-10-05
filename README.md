@@ -1,5 +1,9 @@
 # Email-Project
 
+**NOTE**
+
+Accidental merge of "feature-Custom-Query" into "Main" due to click error.
+
 This is the final project of my QA Academy Software Development course. The project
 puts together Agile methodologies, Java fundamentals and back-end, server side
 requests.
