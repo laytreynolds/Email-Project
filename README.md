@@ -13,7 +13,7 @@ The application takes the details of a user snd stores them in an external datab
 The end goal is build a seperate, interactive command line in which the user interacts with the CLI and the data is posted to the database through the HTTP requests.
 
 
-##**Why Are We Doing This?**
+## Why Are We Doing This?
 This is an accumulation of all the knowledge we have learnt on the course so far and how we apply this knowledge in practical situations.
 
 
