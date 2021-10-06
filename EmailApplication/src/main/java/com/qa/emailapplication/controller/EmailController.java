@@ -58,17 +58,18 @@ public class EmailController {
 		return new ResponseEntity<Boolean>(this.service.delete(id), HttpStatus.NO_CONTENT);
 	}
 
+//create via DTO
+	@PostMapping("/createDTO")
+	public ResponseEntity<EmailDTO> createDTO(@RequestBody Email Email) {
+		return new ResponseEntity<EmailDTO>(this.service.createDTO(Email), HttpStatus.CREATED);
+	}
+	
 //ReadAllByDTO
 	@GetMapping("/readDTO")
 	public ResponseEntity<List<EmailDTO>> readAllDTO() {
 		return new ResponseEntity<List<EmailDTO>>(this.service.readAllDTO(), HttpStatus.OK);
 	}
 
-//create via DTO
-	@PostMapping("/createDTO")
-	public ResponseEntity<EmailDTO> createDTO(@RequestBody Email Email) {
-		return new ResponseEntity<EmailDTO>(this.service.createDTO(Email), HttpStatus.CREATED);
-	}
 
 	// ReadByDepartment
 	@GetMapping("/read/dep/{d}")
