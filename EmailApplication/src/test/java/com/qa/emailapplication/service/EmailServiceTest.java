@@ -20,10 +20,9 @@ public class EmailServiceTest {
 
 	@Mock
 	private EmailRepo repo;
-	
+
 	@InjectMocks
 	private EmailService service;
-
 
 	@Test
 	public void createTest() {

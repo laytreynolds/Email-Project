@@ -58,23 +58,24 @@ public class EmailController {
 		return new ResponseEntity<Boolean>(this.service.delete(id), HttpStatus.NO_CONTENT);
 	}
 
-//ReadAllByDTO
-	@GetMapping("/readDTO")
-	public ResponseEntity<List<EmailDTO>> readAllDTO() {
-		return new ResponseEntity<List<EmailDTO>>(this.service.readAllDTO(), HttpStatus.OK);
-	}
-
 //create via DTO
 	@PostMapping("/createDTO")
 	public ResponseEntity<EmailDTO> createDTO(@RequestBody Email Email) {
 		return new ResponseEntity<EmailDTO>(this.service.createDTO(Email), HttpStatus.CREATED);
 	}
 	
-	//Read
-		@GetMapping("/read/dep/{d}")
-		public ResponseEntity<List<Email>> readByDep(@PathVariable String d) {
-			return new ResponseEntity<List<Email>>(this.service.readByDep(d), HttpStatus.OK);
+//ReadAllByDTO
+	@GetMapping("/readDTO")
+	public ResponseEntity<List<EmailDTO>> readAllDTO() {
+		return new ResponseEntity<List<EmailDTO>>(this.service.readAllDTO(), HttpStatus.OK);
+	}
 
-		}
+
+	// ReadByDepartment
+	@GetMapping("/read/dep/{d}")
+	public ResponseEntity<List<Email>> readByDep(@PathVariable String d) {
+		return new ResponseEntity<List<Email>>(this.service.readByDep(d), HttpStatus.OK);
+
+	}
 
 }
