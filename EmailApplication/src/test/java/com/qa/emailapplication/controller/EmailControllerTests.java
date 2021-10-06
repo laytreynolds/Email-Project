@@ -1,5 +1,6 @@
 package com.qa.emailapplication.controller;
 
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
@@ -14,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.web.servlet.MockMvc;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
@@ -101,15 +101,15 @@ public class EmailControllerTests {
 				.andExpect(status().isAccepted()).andExpect(content().json(updatedAsJSON));
 	}
 
-//	@Test
-//	public void deleteTest() throws Exception {
-//
-//		Long id = 1L;
-//
-//		Mockito.when(this.service.delete(id)).thenReturn(true);
-//		
-////		mvc.perform(delete("/user/delete/{id}", id).(null)
-//
-//	}
+	@Test
+	public void deleteSuccessTest() throws Exception {
+
+		Long id = 1L;
+
+		Mockito.when(this.service.delete(id)).thenReturn(true);
+
+		mvc.perform(delete("/user/delete/{id}", id).contentType(MediaType.APPLICATION_JSON))
+				.andExpect(status().isNoContent());
+	}
 
 }

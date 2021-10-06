@@ -69,12 +69,12 @@ public class EmailController {
 	public ResponseEntity<EmailDTO> createDTO(@RequestBody Email Email) {
 		return new ResponseEntity<EmailDTO>(this.service.createDTO(Email), HttpStatus.CREATED);
 	}
-	
-	//Read
-		@GetMapping("/read/dep/{d}")
-		public ResponseEntity<List<Email>> readByDep(@PathVariable String d) {
-			return new ResponseEntity<List<Email>>(this.service.readByDep(d), HttpStatus.OK);
 
-		}
+	// ReadByDepartment
+	@GetMapping("/read/dep/{d}")
+	public ResponseEntity<List<Email>> readByDep(@PathVariable String d) {
+		return new ResponseEntity<List<Email>>(this.service.readByDep(d), HttpStatus.OK);
+
+	}
 
 }
