@@ -1,5 +1,6 @@
 package com.qa.emailapplication.controller;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -36,6 +37,14 @@ public class EmailControllerTests {
 	@MockBean
 	private EmailService service;
 
+	@Autowired
+    private EmailController controller;
+
+    @Test
+    public void controllerInitialised() {
+        assertThat(controller).isNotNull();
+    }
+	
 	@Test
 	public void createTest() throws Exception {
 		Email entry = new Email(0, "Layt", "Reynolds", "0123456789", "Sales", "layton.reynolds");

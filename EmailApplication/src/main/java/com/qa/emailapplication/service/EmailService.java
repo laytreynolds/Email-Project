@@ -27,9 +27,12 @@ public class EmailService {
 //	Map DTO to Input
 	public EmailDTO mapToDTO(Email a) {
 		return this.mapper.map(a, EmailDTO.class);
-
 	}
 
+//	map from DTO
+	public Email mapFromDTO(EmailDTO a) {
+		return this.mapper.map(a, Email.class);
+	}
 
 //	Email Service constructor
 	public EmailService(EmailRepo repo) {
@@ -81,10 +84,10 @@ public class EmailService {
 		Email saved = this.repo.save(e);
 		return this.mapToDTO(saved);
 	}
-	
-	//Read by department
-		public List<Email> readByDep(String d) {
-			return this.repo.findAllByDepartmentSQL(d); 
-		}
-	
+
+	// Read by department
+	public List<Email> readByDep(String d) {
+		return this.repo.findAllByDepartmentSQL(d);
+	}
+
 }
