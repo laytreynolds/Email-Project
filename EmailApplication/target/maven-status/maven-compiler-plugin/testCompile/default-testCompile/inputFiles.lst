@@ -1,3 +1,4 @@
 /Users/laytreynolds/Documents/Email-Project/EmailApplication/src/test/java/com/qa/emailapplication/EmailApplicationTests.java
-/Users/laytreynolds/Documents/Email-Project/EmailApplication/src/test/java/com/qa/emailapplication/EmailServiceTest.java
-/Users/laytreynolds/Documents/Email-Project/EmailApplication/src/test/java/com/qa/emailapplication/EmailControllerTests.java
+/Users/laytreynolds/Documents/Email-Project/EmailApplication/src/test/java/com/qa/emailapplication/controller/ControllerIntergrationTest.java
+/Users/laytreynolds/Documents/Email-Project/EmailApplication/src/test/java/com/qa/emailapplication/controller/EmailControllerTests.java
+/Users/laytreynolds/Documents/Email-Project/EmailApplication/src/test/java/com/qa/emailapplication/service/EmailServiceTest.java

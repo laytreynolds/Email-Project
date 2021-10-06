@@ -1,3 +1,4 @@
+com/qa/emailapplication/controller/EmailControllerTests.class
 com/qa/emailapplication/EmailApplicationTests.class
-com/qa/emailapplication/EmailControllerTests.class
-com/qa/emailapplication/EmailServiceTest.class
+com/qa/emailapplication/service/EmailServiceTest.class
+com/qa/emailapplication/controller/ControllerIntergrationTest.class
