@@ -1,5 +1,4 @@
-package com.qa.emailapplication.exception;
-//package com.qa.emailapplication;
+//package com.qa.emailapplication.exception;
 //
 //import org.springframework.http.HttpStatus;
 //import org.springframework.web.bind.annotation.ResponseStatus;
