@@ -40,7 +40,7 @@ public class ControllerIntergrationTest {
 		public void createTest() throws Exception {
 			
 			Email entry = new Email(0, "Layt", "Reynolds", "0123456789", "Sales", "layton.reynolds");
-			Email output = new Email(2L, "Layt", "Reynolds", "0123456789", "Sales", "layton.reynolds");
+			Email output = new Email(2L, "Layt", "Reynolds", "0123456789", "Sales"  , "layton.reynolds");
 			
 			String entryAsJSON = this.mapper.writeValueAsString(entry);
 			String outputAsJSON = this.mapper.writeValueAsString(output);
