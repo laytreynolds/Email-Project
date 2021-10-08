@@ -68,7 +68,10 @@ Overall I am very happy with my end results. The project went how I expected and
 <img width="1440" alt="Screenshot 2021-10-01 at 16 30 21 (2)" src="https://user-images.githubusercontent.com/79116038/135647640-f7cb4cc5-77e3-4417-a124-d2d6ae0103ed.png">
 
 #### Test Results 
-<img width="1397" alt="Screenshot 2021-10-04 at 22 27 36" src="https://user-images.githubusercontent.com/79116038/135927288-b77b6b64-075b-4a67-a869-e40e7feb55b0.png">
+![Controller Testing](https://user-images.githubusercontent.com/79116038/136525042-aee840a9-338b-47bd-b020-90cac6488732.png)
+![Service Testing](https://user-images.githubusercontent.com/79116038/136525061-68c093aa-76d1-4c81-a64d-248e9b9319c1.png)
+![Intergration Testing](https://user-images.githubusercontent.com/79116038/136525077-766f069d-036f-42c2-ad1e-7ccb55725c7c.png)
+
 
 
 ### Jira Board - https://laytreynolds.atlassian.net/jira/software/projects/QJPECA/boards/2
