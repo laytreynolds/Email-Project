@@ -2,7 +2,7 @@
 
 ### Note
 
-Accidental merge of "feature-Custom-Query" and "Feature-CleanUp"into "Main" due to click error.
+**Accidental merge of "feature-Custom-Query" and "Feature-CleanUp"into "Main" due to click error.**
 
 This is the final project of my QA Academy Software Development course. The project
 puts together Agile methodologies, Java fundamentals and back-end, server side
