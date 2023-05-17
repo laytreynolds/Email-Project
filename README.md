@@ -8,7 +8,7 @@ This is the final project of my QA Academy Software Development course. The proj
 puts together Agile methodologies, Java fundamentals and back-end, server side
 requests.
 
-The application takes the details of a user snd stores them in an external database. Users can then use CRUD to interact with the database via HTTP requests.
+The application takes the details of a user and stores them in an external database. Users can then use CRUD to interact with the database via HTTP requests.
 
 The end goal is build a seperate, interactive command line in which the user interacts with the CLI and the data is posted to the database through the HTTP requests.
 
